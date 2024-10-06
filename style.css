@@ -1,0 +1,98 @@
+* {
+  font-size: 12px;
+  font-family: "Terminus (TTF)";
+}
+
+window#waybar {
+    background: rgba(0,0,0,0);
+}
+
+#cpu {
+  margin: 3px 0px 3px 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px;
+  background: rgba(70, 130, 180, 0.6);
+  color: #c5c8c6;
+}
+
+#memory {
+  margin: 3px 0px 3px 0px;
+  background: rgba(70, 130, 180, 0.6);
+  padding: 5px;
+  color: #c5c8c6;
+}
+
+#disk {
+  margin: 3px 3px 3px 0px;
+  padding: 5px 7px 5px 5px;
+  background: rgba(70, 130, 180, 0.6);
+  color: #c5c8c6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#custom-quit {
+  margin: 3px 3px 3px 0px;
+  padding: 5px 7px 5px 5px;
+  background: rgba(70, 130, 180, 0.6);
+  color: #c5c8c6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#clock {
+  margin: 3px 0px 3px 0px;
+  padding: 5px;
+  background: rgba(70, 130, 180, 0.6);  background: rgba(70, 130, 180, 0.6);
+  color: #c5c8c6;
+}
+
+#custom-media {
+  margin: 3px;
+  padding: 5px 7px 5px 7px;
+  border-radius: 10px;
+  background: rgba(70, 130, 180, 0.6);
+  color: #c5c8c6;
+}
+
+#wireplumber {
+  margin: 3px 0px 3px 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px;
+  background: rgba(70, 130, 180, 0.6);
+  color: #c5c8c6;
+}
+
+#network {
+  margin: 3px 0px 3px 3px;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: rgba(70, 130, 180, 0.6);
+  color: #c5c8c6;
+}
+
+#workspaces {
+    margin: 0 5px;
+}
+
+#workspaces button {
+    padding:    0 5px;
+    color:      rgba(217, 216, 216, 0.4);
+}
+
+#workspaces button.visible {
+    color:      rgba(217, 216, 216, 1);
+}
+
+#workspaces button.focused {
+    background: rgba(70, 130, 180, 0.6);
+    /* border-top: 3px solid rgba(217, 216, 216, 1); */
+    /* border-bottom: 3px solid rgba(217, 216, 216, 0); */
+}
+
+#workspaces button.urgent {
+    color:      rgba(238, 46, 36, 1);
+}
