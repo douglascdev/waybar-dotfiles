@@ -79,6 +79,7 @@ window#waybar {
 }
 
 #workspaces button {
+    margin: 3px 0px 3px 3px;
     padding:    0 5px;
     color:      rgba(217, 216, 216, 0.4);
 }
@@ -89,8 +90,6 @@ window#waybar {
 
 #workspaces button.focused {
     background: rgba(70, 130, 180, 0.6);
-    /* border-top: 3px solid rgba(217, 216, 216, 1); */
-    /* border-bottom: 3px solid rgba(217, 216, 216, 0); */
 }
 
 #workspaces button.urgent {
