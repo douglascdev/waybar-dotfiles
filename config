@@ -1,27 +1,26 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["sway/workspaces", "custom/media"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["cpu", "memory", "disk", "wireplumber", "clock", "custom/quit"],
+    "modules-left": ["hyprland/workspaces", "custom/media"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["custom/todolist", "cpu", "memory", "disk", "wireplumber", "clock", "custom/quit"],
     "clock": {
         "format": "  {:%H:%M}",
         "format-alt": "{:%a %b %d}",
         "tooltip": false
     },
-    "sway/window": {  
+    "hyprland/window": {  
         "format": "{}"  
     },
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "all-outputs": false,
         "format": "{name}: {icon} ",
         "format-icons": {
-            "1": "",
             "1": "",
             "2": "",
             "3": "🎮",
-            "6": "",
-            "7": "",
+            "4": "",
+            "5": "",
             "urgent": "",
             "default": "",
         },
@@ -52,6 +51,12 @@
         "interval": 1,
         "exec": "$HOME/.config/waybar/get_media.sh"
     },
+    "custom/todolist": {
+        "format": "{}",
+        "interval": 5,
+        "exec": "python $HOME/.config/waybar/todo.py status",
+        "on-click": "python $HOME/.config/waybar/todo.py pop"
+    },
     "wireplumber": {
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} {volume}%",
@@ -70,6 +75,6 @@
     },
     "custom/quit": {
         "format": " ",
-        "on-click": "swaynag -f 'Terminus (TTF)'  -t warning -m 'Do you really want to exit sway?' -b 'Yes, exit sway' 'swaymsg exit'"
+        "on-click": "hyprlandnag -f 'Terminus (TTF)'  -t warning -m 'Do you really want to exit hyprland?' -b 'Yes, exit hyprland' 'hyprlandmsg exit'"
     }
 }
