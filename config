@@ -75,6 +75,6 @@
     },
     "custom/quit": {
         "format": " ",
-        "on-click": "hyprlandnag -f 'Terminus (TTF)'  -t warning -m 'Do you really want to exit hyprland?' -b 'Yes, exit hyprland' 'hyprlandmsg exit'"
+        "on-click": "hyprctl dispatch exit"
     }
 }
