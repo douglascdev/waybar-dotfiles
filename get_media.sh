@@ -1,5 +1,5 @@
-media=$(playerctl metadata -f "({{playerName}}) {{artist}} - {{title}}")
-player_status=$(playerctl status)
+media=$(playerctl metadata --player=spotify,firefox,%any -f "({{playerName}}) {{artist}} - {{title}}")
+player_status=$(playerctl status --player=spotify,firefox,%any)
 
 if [[ $player_status = "Playing" ]]
 then
