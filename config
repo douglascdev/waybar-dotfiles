@@ -10,7 +10,7 @@
         "tooltip": false
     },
     "hyprland/window": {  
-        "format": "{}"  
+        "max-length": 50
     },
     "hyprland/workspaces": {
         "all-outputs": false,
@@ -49,6 +49,7 @@
     "custom/media": {
         "format": "{}",
         "interval": 1,
+        "max-length": 50,
         "exec": "$HOME/.config/waybar/get_media.sh"
     },
     "custom/todolist": {
